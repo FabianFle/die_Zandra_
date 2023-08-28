@@ -1,0 +1,148 @@
+.showImg-Div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.showImg-Headline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  margin-bottom: 70px;
+
+  h1 {
+    font-family: "Russo One", sans-serif;
+    color: white;
+    font-size: 80px;
+    text-shadow: 0px 0px 20px #24ff24;
+    transition: all 125ms ease-in-out;
+
+    &:hover {
+      text-shadow: 0 10px 10px #24ff24, 0 10px 20px #24ff24;
+      transform: translate(0, -1rem);
+    }
+  }
+}
+
+.showImg-position {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.img-div {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.showImg {
+  object-fit: contain;
+  border-radius: 20px;
+  border: 2px solid white;
+  margin: 30px;
+  height: 400px;
+}
+
+.box-shadow {
+  position: relative;
+  transition: all 125ms ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+}
+
+.box-shadow::before {
+  content: "";
+  position: absolute;
+  top: 31px;
+  left: 30px;
+  right: 31px;
+  bottom: 38px;
+  z-index: -1;
+  border-radius: 20px;
+  animation: shadow 4s linear infinite;
+}
+
+.green-line-social {
+  height: 4px;
+  width: 100px;
+  background-color: #24ff24;
+
+  &:first-child {
+    margin-right: 20px;
+  }
+
+  &:last-child {
+    margin-left: 20px;
+  }
+}
+
+@keyframes shadow {
+  0% {
+    box-shadow: 0px 0px 10px 10px #24ff24;
+  }
+
+  25% {
+    box-shadow: 0px 0px 20px 10px #128d10;
+  }
+
+  50% {
+    box-shadow: 0px 0px 10px 10px #24ff24;
+  }
+
+  100% {
+    box-shadow: 0px 0px 20px 10px #128d10;
+  }
+}
+
+@media (max-width: 990px) {
+  .showImg-Headline {
+    h1 {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .showImg-Headline {
+    h1 {
+      font-size: 50px;
+    }
+  }
+
+  .showImg {
+    height: 250px;
+  }
+
+  .img-div {
+    margin: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .showImg-Headline {
+    h1 {
+      font-size: 40px;
+    }
+  }
+
+  .showImg {
+    width: 300px;
+  }
+}
+
+@media (max-width: 370px) {
+  .showImg-Headline {
+    h1 {
+      font-size: 20px;
+    }
+  }
+
+  .showImg {
+    width: 200px;
+  }
+}

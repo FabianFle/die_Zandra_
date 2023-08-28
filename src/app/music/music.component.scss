@@ -1,0 +1,81 @@
+.music-container {
+    margin-top: 100px;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 45px;
+    color: white;
+    transition: all 125ms ease-in-out;
+    margin: 0;
+
+    &:hover {
+        text-shadow: 0 10px 10px #24FF24, 0 10px 20px #24FF24, ;
+        transform: translate(0, -1rem);
+    }
+}
+
+span {
+    font-family: 'Russo One', sans-serif;
+    font-size: 25px;
+    color: white;
+    max-width: 650px;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.spotify-container {
+    margin-top: 100px;
+}
+
+.spotify {
+    width: 650px;
+    height: 450px;
+}
+
+.headline-music {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 200px;
+}
+
+.green-line-social {
+    height: 4px;
+    width: 100px;
+    background-color: #24ff24;
+
+    &:first-child {
+        margin-right: 20px;
+    }
+
+    &:last-child {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 670px) {
+    
+    .green-line-social {
+        width: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .spotify {
+        width: auto;
+    }
+
+    span {
+        font-size: 18px;
+    }
+}

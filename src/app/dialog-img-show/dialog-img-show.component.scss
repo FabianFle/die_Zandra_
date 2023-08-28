@@ -1,0 +1,27 @@
+.dialog-img-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog-img {
+  max-width: 800px;
+  max-height: 600px;
+}
+
+.dialog-nav {
+  position: absolute;
+  top: 2%;
+  transform: translateY(-50%);
+  margin-top: 10px;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: #24ff24;
+  cursor: pointer;
+  margin: 15px;
+}

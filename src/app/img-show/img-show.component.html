@@ -1,0 +1,16 @@
+<div class="showImg-Div">
+
+    <div class="showImg-Headline">
+        <div class="green-line-social"></div>
+        <h1>Galerie</h1>
+        <div class="green-line-social"></div>
+    </div>
+    <div class="showImg-position">
+
+        <div class="img-div box-shadow" *ngFor="let img of imgs; let i = index">
+            <img (click)="openImgShow(img)" class="showImg" src="/assets/img/showImg/{{img}}">
+        </div>
+        
+    </div>
+
+</div>

@@ -1,0 +1,38 @@
+<div class="shopping-card">
+    <div class="shopping-card-header">
+        <h3>Warenkorb</h3>
+        <span (click)="onNoClick()">X</span>
+    </div>
+    <div class="shopping-card-items">
+        <ul>
+            <li *ngFor="let item of items">
+                <img [src]="item.img.img1" alt="Produktbild" />
+                <div class="item-details">
+                    <h4>{{ item.name }}</h4>
+                    <p>{{ item.description }}</p>
+                    <span>{{ item.price | currency: 'EUR': 'symbol-narrow' }}</span>
+                </div>
+                <div class="item-actions">
+                    <button (click)="removeItem(item)">-</button>
+                    <span>{{ item.quantity }}</span>
+                    <button (click)="addItem(item)">+</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="shopping-card-footer">
+        <div class="subtotal">
+            <span>Zwischensumme:</span>
+            <span>{{ subtotal | currency: 'EUR': 'symbol-narrow' }}</span>
+        </div>
+        <div class="shipping">
+            <span>Versandkosten:</span>
+            <span>{{ shipping | currency: 'EUR': 'symbol-narrow' }}</span>
+        </div>
+        <div class="total">
+            <span>Gesamt:</span>
+            <span>{{ calculateTotal() | currency: 'EUR': 'symbol-narrow'}}</span>
+        </div>
+        <button class="checkout-button">Zur Kasse gehen</button>
+    </div>
+</div>
