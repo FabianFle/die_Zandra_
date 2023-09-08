@@ -1,13 +1,14 @@
 <header>
     <div class="header-log-text">
-        <a href="#"><span class="header-logo-name">Die_Zandra_</span></a>
-        <a href="#"> <img class="header-logo" src="/assets/img/ZandraLogoLöweZ.png"></a>
+        <a routerLink="/"><span class="header-logo-name">Die_Zandra_</span></a>
+        <a routerLink="/"> <img class="header-logo" src="/assets/img/ZandraLogoLöweZ.png"></a>
     </div>
     <div class="header-menu">
-        <a href="#about-me">Über mich</a>
-        <a href="#social-media">Social Media</a>
-        <a href="#music">Playlist</a>
-        <a href="#contact">Kontakt</a>
+        <a routerLink="/">Über mich</a>
+        <a routerLink="/socialMedia">Social Media</a>
+        <a routerLink="/music">Playlist</a>
+        <!-- <a routerLink="/managerin">Managerin</a> -->
+        <a routerLink="/contact">Kontakt</a>
     </div>
 
     <div class="headerMenuMobilDiv">
@@ -16,10 +17,11 @@
         <label for="active" class="close" #closeBtn></label>
         <div class="wrapper">
             <ul>
-                <li><a (click)="closeMenu()" href="#about-me">Über mich</a></li>
-                <li><a (click)="closeMenu()" href="#social-media">Social Media</a></li>
-                <li><a (click)="closeMenu()" href="#music">Playlist</a></li>
-                <li><a (click)="closeMenu()" href="#contact">Kontakt</a></li>
+                <li><a (click)="closeMenu()" routerLink="/">Über mich</a></li>
+                <li><a (click)="closeMenu()" routerLink="/socialMedia">Social Media</a></li>
+                <li><a (click)="closeMenu()" routerLink="/music">Playlist</a></li>
+                <!-- <li><a (click)="closeMenu()" routerLink="/managerin">Managerin</a></li> -->
+                <li><a (click)="closeMenu()" routerLink="/contact">Kontakt</a></li>
             </ul>
         </div>
     </div>

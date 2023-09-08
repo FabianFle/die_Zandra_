@@ -1,0 +1,83 @@
+.managerin-Div {
+  margin-top: 150px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Russo One", sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  transition: all 125ms ease-in-out;
+  &:hover {
+    text-shadow: 0 10px 10px #24ff24, 0 10px 20px #24ff24;
+    transform: translate(0, -1rem);
+  }
+}
+
+.margin-50 {
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 500px;
+  height: 300px;
+  text-align: center;
+  transition: all 125ms ease-in-out;
+
+  &:hover {
+    box-shadow: 0px 0px 10px 3px #24ff30;
+  }
+
+  h1 {
+    margin: 25px;
+    transition: all 125ms ease-in-out;
+    &:hover {
+      text-shadow: 0 10px 10px #24ff24, 0 10px 20px #24ff24;
+      transform: translate(0, -1rem);
+    }
+  }
+
+  span {
+    font-size: 20px;
+  }
+}
+
+.imgAgentur {
+  object-fit: contain;
+  height: 500px;
+  border: 2px solid white;
+  border-radius: 10px;
+  transition: all 125ms ease-in-out;
+
+  &:hover {
+    box-shadow: 0px 0px 10px 3px #24ff30;
+  }
+}
+
+.managerinZandra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+
+  span {
+    font-size: 20px;
+    max-width: 600px;
+    text-align: center;
+    margin: 50px;
+  }
+}
+
+.managerinAgenturDiv2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

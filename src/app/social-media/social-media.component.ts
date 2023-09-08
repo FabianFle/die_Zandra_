@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./social-media.component.scss']
 })
 export class SocialMediaComponent {
+  
+  ngOnInit() { window.scrollTo(0, 0); }
 
 }

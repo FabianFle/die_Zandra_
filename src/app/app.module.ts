@@ -7,16 +7,14 @@ import { ImpressumComponent } from './impressum/impressum.component';
 import { StartComponent } from './start/start.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { AboutMeComponent } from './about-me/about-me.component';
 import { SocialMediaComponent } from './social-media/social-media.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { ContactComponent } from './contact/contact.component';
 import { ImgShowComponent } from './img-show/img-show.component';
-import { ShopComponent } from './shop/shop.component';
 import { MatDialogModule } from '@angular/material/dialog';
-import { ShoppingCardComponent } from './shopping-card/shopping-card.component';
 import { MusicComponent } from './music/music.component';
 import { DialogImgShowComponent } from './dialog-img-show/dialog-img-show.component';
+import { ManagerinComponent } from './managerin/managerin.component';
 
 
 @NgModule({
@@ -26,15 +24,13 @@ import { DialogImgShowComponent } from './dialog-img-show/dialog-img-show.compon
     StartComponent,
     HeaderComponent,
     FooterComponent,
-    AboutMeComponent,
     SocialMediaComponent,
     MainpageComponent,
     ContactComponent,
     ImgShowComponent,
-    ShopComponent,
-    ShoppingCardComponent,
     MusicComponent,
     DialogImgShowComponent,
+    ManagerinComponent,
   ],
   imports: [
     BrowserModule,

@@ -34,4 +34,6 @@ export class DialogImgShowComponent {
   closeDialog() {
     this.dialogRef.close();
   }
+
+  ngOnInit() { window.scrollTo(0, 0); }
 }

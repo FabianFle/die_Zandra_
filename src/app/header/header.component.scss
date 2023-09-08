@@ -1,5 +1,6 @@
 header {
     position: fixed;
+    top: 0;
     z-index: 5;
     height: 100px;
     width: 100%;
@@ -210,13 +211,13 @@ input[type="checkbox"] {
 //######################################
 
 
-@media (min-width: 1000px) {
+@media (min-width: 1230px) {
     .headerMenuMobilDiv {
         display: none;
     }
 }
 
-@media (max-width: 999px) {
+@media (max-width: 1229px) {
 
     .header-menu {
         display: none;

@@ -14,6 +14,8 @@ export class ContactComponent {
 
   constructor() { }
 
+  ngOnInit() { window.scrollTo(0, 0); }
+
   sendMail() {
     let nameField = this.nameField.nativeElement;
     let emailField = this.emailField.nativeElement;
