@@ -71,14 +71,13 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-direction: column-reverse;
-  margin-top: 100px;
+  margin-top: 50px;
 
   span {
     font-size: 20px;
     max-width: 650px;
     text-align: center;
     margin: 50px;
-    margin-left: 0;
   }
 }
 
@@ -95,4 +94,37 @@ h1 {
   position: absolute;
   left: 0;
   bottom: 0;
+}
+
+@media (max-width: 510px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  .managerinZandra {
+    span {
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 50px;
+      margin-top: 50px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .imgAgentur {
+    height: 350px;
+  }
+
+  .managerin-shadow2 {
+    img {
+      width: 250px;
+    }
+  }
+
 }
