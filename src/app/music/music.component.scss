@@ -69,6 +69,12 @@ span {
   }
 }
 
+.music-shadow {
+  position: absolute;
+  left: 0;
+  top: 100px;
+}
+
 @media (max-width: 670px) {
   .green-line-social {
     width: 20px;

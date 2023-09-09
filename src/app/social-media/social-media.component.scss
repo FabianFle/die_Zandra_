@@ -1,182 +1,186 @@
 .social-div {
-    margin-bottom: 100px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  margin-bottom: 100px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .tiktok-embed {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 .headline-social {
-    font-family: 'Russo One', sans-serif;
-    font-size: 45px;
-    color: white;
-    transition: all 125ms ease-in-out;
-    margin: 0;
+  font-family: "Russo One", sans-serif;
+  font-size: 45px;
+  color: white;
+  transition: all 125ms ease-in-out;
+  margin: 0;
 
-    &:hover {
-        text-shadow: 0 10px 10px #24FF24, 0 10px 20px #24FF24, ;
-        transform: translate(0, -1rem);
-    }
+  &:hover {
+    text-shadow: 0 10px 10px #24ff24, 0 10px 20px #24ff24;
+    transform: translate(0, -1rem);
+  }
 }
 
 .social-text {
-    color: white;
-    margin-bottom: 20px;
-    font-family: 'Russo One', sans-serif;
+  color: white;
+  margin-bottom: 20px;
+  font-family: "Russo One", sans-serif;
 }
 
 .social-h1 {
-    font-family: 'Russo One', sans-serif;
-    color: white;
+  font-family: "Russo One", sans-serif;
+  color: white;
 }
 
 .social-tiktok {
-    max-width: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-right: 20px;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 20px;
 
-    span {
-        color: white;
-    }
+  span {
+    color: white;
+  }
 }
 
 .social-instagram {
-    max-width: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-left: 20px;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 20px;
 }
 
 .tiktok-embed {
-    margin: 0;
+  margin: 0;
 }
 
 .social-shadow {
-    position: absolute;
-    right: 0;
-    top: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .tiktok-insta {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .instagram-window {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+
+  img {
     border-radius: 10px;
-
-    img {
-        border-radius: 10px;
-        object-fit: contain;
-        width: 590px;
-        height: 50vpx;
-        transition: all 125ms ease-in-out;
-
-        &:hover {
-            cursor: pointer;
-            box-shadow: 0px 0px 10px 3px #24FF30;
-        }
-    }
-}
-
-.tiktok-container {
+    object-fit: contain;
+    width: 590px;
+    height: 500px;
     transition: all 125ms ease-in-out;
 
     &:hover {
-        cursor: pointer;
-        box-shadow: 0px 0px 10px 3px #24FF30;
+      cursor: pointer;
+      box-shadow: 0px 0px 10px 3px #24ff30;
     }
+  }
+}
+
+.tiktok-container {
+  transition: all 125ms ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 3px #24ff30;
+  }
 }
 
 .headline-social-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 100px;
-    margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 200px;
 }
 
 .green-line-social {
-    height: 4px;
-    width: 100px;
-    background-color: #24ff24;
+  height: 4px;
+  width: 100px;
+  background-color: #24ff24;
 
-    &:first-child {
-        margin-right: 20px;
-    }
+  &:first-child {
+    margin-right: 20px;
+  }
 
-    &:last-child {
-        margin-left: 20px;
-    }
+  &:last-child {
+    margin-left: 20px;
+  }
 }
 
 @media (max-width: 1270px) {
-    .tiktok-insta {
-        flex-direction: column;
-    }
+  .tiktok-insta {
+    flex-direction: column;
+  }
 
-    .social-tiktok {
-        margin-right: 0;
-    }
+  .social-tiktok {
+    margin-right: 0;
+  }
 
-    .social-instagram {
-        margin-top: 50px;
-        margin-left: 0;
-    }
+  .social-instagram {
+    margin-top: 50px;
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 690px) {
-    .social-text {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
+  .social-text {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 
-    .headline-social {
-        font-size: 30px;
-    }
+  .headline-social {
+    font-size: 30px;
+  }
 
-    .tiktok-embed {
-        width: 90%;
-    }
+  .tiktok-embed {
+    width: 90%;
+  }
 
-    .instagram-window {
-        width: 90%;
+  .instagram-window {
+    width: 90%;
 
-        img {
-            width: 100%;
-            height: auto;
-        }
+    img {
+      width: 100%;
+      height: 370px;
     }
+  }
+
+  .tiktok-embed {
+    width: auto !important;
+  }
 }
 
 @media (max-width: 460px) {
-    .green-line-social {
-        width: 30px;
-    }
+  .green-line-social {
+    width: 30px;
+  }
 }
 
 @media (max-width: 460px) {
-    .green-line-social {
-        width: 20px;
-    }
+  .green-line-social {
+    width: 20px;
+  }
 
-    .headline-social {
-        font-size: 25px;
-    }
+  .headline-social {
+    font-size: 25px;
+  }
 }

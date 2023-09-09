@@ -1,4 +1,5 @@
 .managerin-Div {
+  position: relative;
   margin-top: 150px;
   color: white;
   display: flex;
@@ -9,6 +10,8 @@
 }
 
 h1 {
+  position: relative;
+  z-index: 2;
   font-size: 40px;
   font-weight: bold;
   transition: all 125ms ease-in-out;
@@ -27,7 +30,7 @@ h1 {
   border: 2px solid white;
   border-radius: 10px;
   width: 500px;
-  height: 300px;
+  height: 350px;
   text-align: center;
   transition: all 125ms ease-in-out;
 
@@ -51,7 +54,7 @@ h1 {
 
 .imgAgentur {
   object-fit: contain;
-  height: 500px;
+  height: 480px;
   border: 2px solid white;
   border-radius: 10px;
   transition: all 125ms ease-in-out;
@@ -62,22 +65,34 @@ h1 {
 }
 
 .managerinZandra {
+  position: relative;
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column-reverse;
   margin-top: 100px;
 
   span {
     font-size: 20px;
-    max-width: 600px;
+    max-width: 650px;
     text-align: center;
     margin: 50px;
+    margin-left: 0;
   }
 }
 
 .managerinAgenturDiv2 {
+  position: relative;
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+}
+
+.managerin-shadow2 {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
