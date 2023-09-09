@@ -30,6 +30,8 @@ span {
 }
 
 .spotify-container {
+  position: relative;
+  z-index: 2;
   margin-top: 100px;
 
   iframe {
@@ -42,12 +44,19 @@ span {
   }
 }
 
+.z-index {
+  position: relative;
+  z-index: 2;
+}
+
 .spotify {
   width: 650px;
   height: 450px;
 }
 
 .headline-music {
+  position: relative;
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,6 +79,7 @@ span {
 }
 
 .music-shadow {
+  z-index: 1;
   position: absolute;
   left: 0;
   top: 100px;
