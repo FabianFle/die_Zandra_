@@ -17,20 +17,31 @@
   color: white;
   transition: all 125ms ease-in-out;
   margin: 0;
+  animation: pulse 1s infinite alternate;
 
   &:hover {
-    text-shadow: 0 10px 10px #24ff24, 0 10px 20px #24ff24;
-    transform: translate(0, -1rem);
+    text-shadow: 0 0 10px #24ff24, 0 0 20px #24ff24;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
   }
 }
 
 .social-text {
   color: white;
   margin-bottom: 20px;
+  text-align: center;
   font-family: "Russo One", sans-serif;
 }
 
 .social-h1 {
+  font-size: 40px;
   font-family: "Russo One", sans-serif;
   color: white;
 }
@@ -41,7 +52,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-right: 20px;
 
   span {
     color: white;
@@ -54,7 +64,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-left: 20px;
+  margin-top: 100px;
 }
 
 .tiktok-embed {
@@ -73,6 +83,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .instagram-window {

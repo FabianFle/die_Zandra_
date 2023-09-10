@@ -12,10 +12,19 @@ h1 {
   color: white;
   transition: all 125ms ease-in-out;
   margin: 0;
+  animation: pulse 1s infinite alternate;
 
   &:hover {
-    text-shadow: 0 10px 10px #24ff24, 0 10px 20px #24ff24;
-    transform: translate(0, -1rem);
+    text-shadow: 0 0 10px #24ff24, 0 0 20px #24ff24;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
   }
 }
 
@@ -65,6 +74,7 @@ span {
 }
 
 .green-line-social {
+  margin: 20px;
   height: 4px;
   width: 100px;
   background-color: #24ff24;
@@ -85,6 +95,84 @@ span {
   top: 100px;
 }
 
+.musicIconsDiv1,
+.musicIconsDiv2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 50px;
+}
+
+.musicIcon1,
+.musicIcon2 {
+  object-fit: cover;
+  height: 50px;
+  position: absolute;
+  transform-origin: center;
+}
+
+.musicIcon1 {
+  animation: rotateAndChange1 3s linear infinite;
+}
+
+.musicIcon2 {
+  animation: rotateAndChange2 3s linear infinite;
+}
+
+@keyframes rotateAndChange1 {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 0;
+  }
+  25% {
+    transform: rotate(90deg) scale(1.2);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(180deg) scale(1);
+    opacity: 0;
+  }
+  75% {
+    transform: rotate(270deg) scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes rotateAndChange2 {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  25% {
+    transform: rotate(90deg) scale(1.2);
+    opacity: 0;
+  }
+  50% {
+    transform: rotate(180deg) scale(1);
+    opacity: 1;
+  }
+  75% {
+    transform: rotate(270deg) scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 840px) {
+  h1 {
+    text-align: center;
+    line-height: 100%;
+  }
+}
+
 @media (max-width: 670px) {
   .green-line-social {
     width: 20px;
@@ -100,5 +188,24 @@ span {
 
   span {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 460px) {
+  .musicIcon1,
+  .musicIcon2 {
+    height: 25px;
+  }
+
+  .musicIconsDiv1,
+  .musicIconsDiv2 {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 410px) {
+  .musicIconsDiv1,
+  .musicIconsDiv2 {
+    display: none;
   }
 }

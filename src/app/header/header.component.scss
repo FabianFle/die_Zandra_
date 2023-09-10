@@ -1,266 +1,267 @@
 header {
-    position: fixed;
-    top: 0;
-    z-index: 5;
-    height: 100px;
-    width: 100%;
-    color: green;
-    background-color: rgb(0, 30, 5);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    box-shadow: 0px 1px 10px 0px #000000;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  height: 100px;
+  width: 100%;
+  color: green;
+  background-color: rgb(0, 30, 5);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 1px 10px 0px #000000;
 }
 
 .header-log-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    a {
-        text-decoration: none;
-    }
+  a {
+    text-decoration: none;
+  }
 }
 
 .header-logo-name {
-    font-family: 'Russo One', sans-serif;
-    font-size: 40px;
-    color: green;
-    margin-right: 20px;
+  font-family: "Russo One", sans-serif;
+  font-size: 40px;
+  color: green;
+  margin-right: 20px;
+  margin-left: 20px;
 
-    &:hover {
-        cursor: pointer;
-    }
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .header-logo {
-    object-fit: cover;
-    height: 70px;
+  object-fit: cover;
+  height: 70px;
 
-    &:hover {
-        cursor: pointer;
-    }
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .darkmode-Btn {
-    border-radius: 20px;
-    height: 30px;
-    width: 30px;
-    padding: 5px;
-    margin-left: 20px;
-    background-color: green;
-    transition: all 125ms ease-in-out;
+  border-radius: 20px;
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  margin-left: 20px;
+  background-color: green;
+  transition: all 125ms ease-in-out;
 
-    img {
-        object-fit: cover;
-        width: 40px;
-    }
+  img {
+    object-fit: cover;
+    width: 40px;
+  }
 
-    &:hover {
-        transform: scale(1.2);
-        background-color: #24FF24;
-        box-shadow: 0px 0px 10px 3px #24FF30;
-    }
+  &:hover {
+    transform: scale(1.2);
+    background-color: #24ff24;
+    box-shadow: 0px 0px 10px 3px #24ff30;
+  }
 }
 
 .header-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 
-    a {
-        text-decoration: none;
-        color: green;
-        font-size: 25px;
-        font-family: 'Russo One', sans-serif;
-        margin-left: 20px;
-        margin-right: 20px;
-        transition: all 125ms ease-in-out;
+  a {
+    text-decoration: none;
+    color: green;
+    font-size: 25px;
+    line-height: 100%;
+    font-family: "Russo One", sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: all 125ms ease-in-out;
 
-        &:hover {
-            color: lightgreen;
-            transform: scale(1.1);
-            cursor: pointer;
-        }
+    &:hover {
+      color: lightgreen;
+      transform: scale(1.1);
+      cursor: pointer;
     }
+  }
 }
 
 .wrapper {
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    right: -100%;
-    height: 100%;
-    width: 100%;
-    max-width: 100%;
-    background: rgba(46, 64, 55, 0.9);
-    transition: all 0.6s ease-in-out;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  background: rgba(46, 64, 55, 0.9);
+  transition: all 0.6s ease-in-out;
 }
 
-#active:checked~.wrapper {
-    right: 0;
+#active:checked ~ .wrapper {
+  right: 0;
 }
 
 .menu-btn {
-    position: absolute;
-    z-index: 5;
-    right: 20px;
-    top: 10px;
-    height: 80px;
-    width: 80px;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 50%;
-    font-size: 20px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
+  position: absolute;
+  z-index: 5;
+  right: 20px;
+  top: 10px;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu-btn span,
 .menu-btn:before,
 .menu-btn:after {
-    content: "";
-    position: absolute;
-    top: calc(50% - 1px);
-    left: 30%;
-    width: 40%;
-    border-bottom: 2px solid green;
-    transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  content: "";
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 30%;
+  width: 40%;
+  border-bottom: 2px solid green;
+  transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .menu-btn:before {
-    transform: translateY(-8px);
+  transform: translateY(-8px);
 }
 
 .menu-btn:after {
-    transform: translateY(8px);
+  transform: translateY(8px);
 }
 
 .close {
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    transition: background .6s;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  transition: background 0.6s;
 }
 
 /* closing animation */
-#active:checked+.menu-btn span {
-    transform: scaleX(0);
+#active:checked + .menu-btn span {
+  transform: scaleX(0);
 }
 
-#active:checked+.menu-btn:before {
-    transform: rotate(45deg);
-    border-color: green;
+#active:checked + .menu-btn:before {
+  transform: rotate(45deg);
+  border-color: green;
 }
 
-#active:checked+.menu-btn:after {
-    transform: rotate(-45deg);
-    border-color: green;
+#active:checked + .menu-btn:after {
+  transform: rotate(-45deg);
+  border-color: green;
 }
 
 .wrapper ul {
-    position: absolute;
-    top: 40%;
-    left: 45%;
-    height: 50%;
-    transform: translate(-50%, -50%);
-    list-style: none;
-    text-align: center;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
 }
 
 .wrapper ul li {
-    height: 10%;
-    margin: 50px 0;
+  height: 10%;
+  margin: 50px 0;
 }
 
 .wrapper ul li a {
-    text-decoration: none;
-    font-size: 50px;
-    font-family: 'Russo One', sans-serif;
-    font-weight: 500;
-    color: black;
-    text-shadow: 0 0 10px green;
-    transition: all 125ms ease-in-out;
-    transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  text-decoration: none;
+  font-size: 50px;
+  font-family: "Russo One", sans-serif;
+  font-weight: 500;
+  color: black;
+  text-shadow: 0 0 10px green;
+  transition: all 125ms ease-in-out;
+  transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .wrapper ul li a:after {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    color: green;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: green;
 }
 
 .wrapper ul li a:hover:after {
-    transform: scaleY(1);
+  transform: scaleY(1);
 }
 
 .wrapper ul li a:hover {
-    color: lightgreen;
+  color: lightgreen;
 }
 
 input[type="checkbox"] {
-    display: none;
+  display: none;
 }
 
 //######################################
 
-
-@media (min-width: 1230px) {
-    .headerMenuMobilDiv {
-        display: none;
-    }
+@media (min-width: 900px) {
+  .headerMenuMobilDiv {
+    display: none;
+  }
 }
 
-@media (max-width: 1229px) {
-
-    .header-menu {
-        display: none;
-    }
+@media (max-width: 899px) {
+  .header-menu {
+    display: none;
+  }
 }
 
 //######################################
 
 @media (max-width: 660px) {
-    .wrapper ul li {
-        margin: 50px -100px;
-    }
+  .wrapper ul li {
+    margin: 50px -100px;
+  }
 }
 
 @media (max-width: 540px) {
-    .header-logo-name {
-        margin-right: 0;
-        font-size: 25px;
-    }
+  .header-logo-name {
+    margin-right: 0;
+    font-size: 25px;
+  }
 
-    .header-logo {
-        height: 40px;
-    }
+  .header-logo {
+    height: 40px;
+  }
 }
 
 @media (max-width: 360px) {
-    .wrapper ul li a {
-        font-size: 30px;
-    }
+  .wrapper ul li a {
+    font-size: 30px;
+  }
 
-    .wrapper ul li {
-        margin: 20px -100px;
-    }
+  .wrapper ul li {
+    margin: 20px -100px;
+  }
 }
 
 @media (max-width: 350px) {
-    .header-log-text {
-        flex-direction: column;
-    }
+  .header-log-text {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 280px) {
-    .header-logo-name {
-        font-size: 20px;
-    }
+  .header-logo-name {
+    font-size: 20px;
+  }
 }
