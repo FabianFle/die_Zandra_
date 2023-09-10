@@ -22,4 +22,7 @@ export class StartComponent {
       this.divImgHeadline.nativeElement.classList.remove('d-none');
     }, 7000);
   }
+
+  ngOnInit() { window.scrollTo(0, 0); }
+
 }

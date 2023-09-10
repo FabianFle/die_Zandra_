@@ -7,7 +7,7 @@ header {
   color: green;
   background-color: rgb(0, 30, 5);
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   box-shadow: 0px 1px 10px 0px #000000;
 }
@@ -69,6 +69,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  max-width: 700px;
 
   a {
     text-decoration: none;
@@ -88,35 +89,40 @@ header {
   }
 }
 
+//######################################
+
 .wrapper {
-  overflow: hidden;
   position: fixed;
   top: 0;
-  right: -100%;
+  right: -100%; /* Startet außerhalb des Bildschirms */
+  width: 70%; /* Breite des Headers */
+  max-width: 250px; /* Maximalbreite des Headers */
   height: 100%;
-  width: 100%;
-  max-width: 100%;
-  background: rgba(46, 64, 55, 0.9);
-  transition: all 0.6s ease-in-out;
+  background: rgba(46, 64, 55, 1);
+  transition: right 0.6s ease-in-out;
+  z-index: 100; /* Stellt sicher, dass der Header über anderen Inhalten liegt */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #active:checked ~ .wrapper {
-  right: 0;
+  right: 0; /* Verschiebt den Header von der rechten Seite ins Bild */
 }
 
 .menu-btn {
   position: absolute;
-  z-index: 5;
   right: 20px;
   top: 10px;
   height: 80px;
-  width: 80px;
+  width: 70px;
   text-align: center;
   line-height: 50px;
   border-radius: 50%;
   font-size: 20px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  z-index: 200; /* Stellt sicher, dass das Hamburger-Icon über dem Header liegt */
 }
 
 .menu-btn span,
@@ -163,44 +169,23 @@ header {
 }
 
 .wrapper ul {
-  position: absolute;
-  top: 40%;
-  left: 45%;
-  height: 50%;
-  transform: translate(-50%, -50%);
   list-style: none;
-  text-align: center;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
 }
 
 .wrapper ul li {
-  height: 10%;
-  margin: 50px 0;
+  margin-left: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .wrapper ul li a {
   text-decoration: none;
-  font-size: 50px;
+  font-size: 20px;
   font-family: "Russo One", sans-serif;
   font-weight: 500;
-  color: black;
+  color: white;
   text-shadow: 0 0 10px green;
   transition: all 125ms ease-in-out;
-  transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-.wrapper ul li a:after {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  color: green;
-}
-
-.wrapper ul li a:hover:after {
-  transform: scaleY(1);
 }
 
 .wrapper ul li a:hover {
@@ -213,26 +198,6 @@ input[type="checkbox"] {
 
 //######################################
 
-@media (min-width: 900px) {
-  .headerMenuMobilDiv {
-    display: none;
-  }
-}
-
-@media (max-width: 899px) {
-  .header-menu {
-    display: none;
-  }
-}
-
-//######################################
-
-@media (max-width: 660px) {
-  .wrapper ul li {
-    margin: 50px -100px;
-  }
-}
-
 @media (max-width: 540px) {
   .header-logo-name {
     margin-right: 0;
@@ -241,16 +206,6 @@ input[type="checkbox"] {
 
   .header-logo {
     height: 40px;
-  }
-}
-
-@media (max-width: 360px) {
-  .wrapper ul li a {
-    font-size: 30px;
-  }
-
-  .wrapper ul li {
-    margin: 20px -100px;
   }
 }
 

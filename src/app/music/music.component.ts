@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class MusicComponent {
 
+  ngOnInit() { window.scrollTo(0, 0); }
+
 }

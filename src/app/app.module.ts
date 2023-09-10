@@ -14,6 +14,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MusicComponent } from './music/music.component';
 import { DialogImgShowComponent } from './dialog-img-show/dialog-img-show.component';
 import { ManagerinComponent } from './managerin/managerin.component';
+import { MerchandiseComponent } from './merchandise/merchandise.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { ManagerinComponent } from './managerin/managerin.component';
     MusicComponent,
     DialogImgShowComponent,
     ManagerinComponent,
+    MerchandiseComponent,
   ],
   imports: [
     BrowserModule,

@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ManagerinComponent {
 
+  ngOnInit() { window.scrollTo(0, 0); }
+
 }
