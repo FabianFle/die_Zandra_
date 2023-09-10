@@ -10,7 +10,6 @@ import { FooterComponent } from './footer/footer.component';
 import { SocialMediaComponent } from './social-media/social-media.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { ContactComponent } from './contact/contact.component';
-import { ImgShowComponent } from './img-show/img-show.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MusicComponent } from './music/music.component';
 import { DialogImgShowComponent } from './dialog-img-show/dialog-img-show.component';
@@ -27,7 +26,6 @@ import { ManagerinComponent } from './managerin/managerin.component';
     SocialMediaComponent,
     MainpageComponent,
     ContactComponent,
-    ImgShowComponent,
     MusicComponent,
     DialogImgShowComponent,
     ManagerinComponent,

@@ -68,7 +68,7 @@
 
 .headline {
   position: absolute;
-  top: 550px;
+  top: 60%;
   left: 0;
   right: 0;
   display: flex;
@@ -109,6 +109,7 @@
   align-items: center;
   font-weight: bold;
   font-family: "Russo One", sans-serif;
+  font-size: 20px;
   border-radius: 10px;
   width: 100px;
   height: 40px;
@@ -131,7 +132,7 @@
   right: 70px;
   bottom: 0;
   z-index: 4;
-  animation: scrollDown 2s linear infinite;
+  animation: scrollDown 1s linear infinite;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -149,23 +150,23 @@
 
 @keyframes scrollDown {
   0% {
-    top: 79%;
+    top: 78%;
   }
 
   25% {
-    top: calc(79% + 1%);
+    top: calc(78% + 2%);
   }
 
   50% {
-    top: 81%;
+    top: 82%;
   }
 
   75% {
-    top: calc(81% - 1%);
+    top: calc(82% - 2%);
   }
 
   100% {
-    top: 79%;
+    top: 78%;
   }
 }
 
