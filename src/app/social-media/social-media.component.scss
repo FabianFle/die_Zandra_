@@ -17,19 +17,22 @@
   color: white;
   transition: all 125ms ease-in-out;
   margin: 0;
-  animation: pulse 1s infinite alternate;
+  animation: pulseH1 2s ease-in-out infinite;
 
   &:hover {
     text-shadow: 0 0 10px #24ff24, 0 0 20px #24ff24;
   }
 }
 
-@keyframes pulse {
+@keyframes pulseH1 {
   0% {
     transform: scale(1);
   }
-  100% {
+  50% {
     transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
@@ -44,6 +47,19 @@
   font-size: 40px;
   font-family: "Russo One", sans-serif;
   color: white;
+  animation: shadowPulse 2s ease-in-out infinite;
+}
+
+@keyframes shadowPulse {
+  0% {
+    text-shadow: 0 0 10px #24ff24, 0 0 20px #24ff24;
+  }
+  50% {
+    text-shadow: 0 0 20px #24ff24, 0 0 30px #24ff24;
+  }
+  100% {
+    text-shadow: 0 0 10px #24ff24, 0 0 20px #24ff24;
+  }
 }
 
 .social-tiktok {
@@ -75,6 +91,12 @@
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.social-shadow1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .tiktok-insta {

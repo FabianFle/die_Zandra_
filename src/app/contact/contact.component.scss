@@ -43,19 +43,22 @@
   color: white;
   transition: all 125ms ease-in-out;
   margin: 0;
-  animation: pulse 1s infinite alternate;
+  animation: pulseH1 2s ease-in-out infinite;
 
   &:hover {
     text-shadow: 0 0 10px #24ff24, 0 0 20px #24ff24;
   }
 }
 
-@keyframes pulse {
+@keyframes pulseH1 {
   0% {
     transform: scale(1);
   }
-  100% {
+  50% {
     transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
@@ -117,6 +120,12 @@ form {
   position: absolute;
   top: 0;
   left: -40px;
+}
+
+.contact-shadow1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .contact-Btn {

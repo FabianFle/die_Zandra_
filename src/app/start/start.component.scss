@@ -237,7 +237,7 @@
   h1 {
     font-size: 50px;
     color: white;
-    animation: pulseH1 1s infinite alternate;
+    animation: pulseH1 2s ease-in-out infinite;
 
     &:hover {
       text-shadow: 0 0 10px #24ff24, 0 0 20px #24ff24;
@@ -248,8 +248,11 @@
     0% {
       transform: scale(1);
     }
-    100% {
+    50% {
       transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
     }
   }
 }
@@ -267,6 +270,12 @@
   position: absolute;
   left: 0;
   top: 0;
+}
+
+.aboutMe-shadow1 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .headline-aboutMe {

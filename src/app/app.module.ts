@@ -12,7 +12,6 @@ import { MainpageComponent } from './mainpage/mainpage.component';
 import { ContactComponent } from './contact/contact.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MusicComponent } from './music/music.component';
-import { DialogImgShowComponent } from './dialog-img-show/dialog-img-show.component';
 import { ManagerinComponent } from './managerin/managerin.component';
 import { MerchandiseComponent } from './merchandise/merchandise.component';
 
@@ -28,7 +27,6 @@ import { MerchandiseComponent } from './merchandise/merchandise.component';
     MainpageComponent,
     ContactComponent,
     MusicComponent,
-    DialogImgShowComponent,
     ManagerinComponent,
     MerchandiseComponent,
   ],
