@@ -16,6 +16,7 @@
     text-shadow: 0 0 5px green, 0 0 10px green, 0 0 15px green, 0 0 20px #24ff30,
       0 0 30px #24ff30, 0 0 40px #24ff30, 0 0 55px #24ff30, 0 0 75px #24ff30;
     animation: pulse 2s ease-in-out infinite;
+    cursor: pointer;
   }
 
   @keyframes pulse {
