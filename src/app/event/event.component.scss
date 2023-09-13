@@ -1,5 +1,4 @@
 .eventDiv {
-  height: 100vh;
   width: 100vw;
   max-width: 100%;
   margin-top: 150px;
@@ -46,6 +45,7 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 85px;
 }
 
 .underHeadlineEvent {
@@ -74,6 +74,13 @@ span {
   }
 }
 
+.allEventsDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .green-line-social {
   margin: 20px;
   height: 4px;
@@ -90,49 +97,95 @@ span {
 }
 
 .tunierEvent {
-    margin: 50px;
-    padding: 20px;
-    border-radius: 10px;
+  margin: 50px;
+  margin-top: 100px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #24ff24;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 125ms ease-in-out;
+
+  &:hover {
+    box-shadow: 0px 0px 10px 3px #24ff30;
+  }
+
+  img {
+    object-fit: cover;
+    height: 250px;
     border: 2px solid #24ff24;
+    border-radius: 10px;
+  }
+
+  h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  span {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    img {
-        object-fit: cover;
-        height: 250px;
-        border: 2px solid #24ff24;
-        border-radius: 10px;
-    }
-
-    h2 {
-        color: white;
-        font-weight: bold;
-        font-size: 30px;
-    }
-
-    span {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        margin-bottom: 50px;
-        font-size: 20px;
-    }
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 20px;
+  }
 }
 
-.tunierLink { 
-    color: #24ff24;
-    transition: all 125ms ease-in-out;
+.tunierLink {
+  color: #24ff24;
+  transition: all 125ms ease-in-out;
 
-    &:hover {
-        color: #24ff24;
-        transform: scale(1.03);
-    }
+  &:hover {
+    color: #24ff24;
+    transform: scale(1.03);
+  }
 }
 
 .d-none {
-    display: none;
+  display: none;
+}
+
+.event-shadow {
+  position: absolute;
+  left: 0;
+  top: 100px;
+}
+
+.event-shadow1 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+@media (max-width: 470px) {
+  .green-line-social {
+    width: 40px;
+  }
+
+  .tunierEvent {
+    margin-top: 0px;
+    margin: 5px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 350px) {
+  .tunierEvent {
+    img {
+      height: 200px;
+    }
+    span {
+      margin-bottom: 25px;
+    }
+  }
+
+  .headerH1 {
+    font-size: 35px;
+  }
 }
