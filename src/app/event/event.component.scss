@@ -42,27 +42,33 @@ span {
 }
 
 .headerEventDiv {
+  position: relative;
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 85px;
-}
-
-.underHeadlineEvent {
   margin-top: 20px;
 }
 
-.underHeadlineEventSpan {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px;
-  margin-left: 15px;
-  margin-right: 15px;
-  text-align: center;
+.underHeadlineEvent {
+  position: relative;
+  z-index: 2;
+  margin-top: 20px;
+
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+  }
 }
 
 .NoEventsDiv {
+  position: relative;
+  z-index: 2;
   margin-top: 250px;
   display: flex;
   justify-content: center;
@@ -75,6 +81,8 @@ span {
 }
 
 .allEventsDiv {
+  position: relative;
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -138,6 +146,7 @@ span {
 }
 
 .tunierLink {
+  line-height: 100%;
   color: #24ff24;
   transition: all 125ms ease-in-out;
 
@@ -163,6 +172,29 @@ span {
   bottom: 0;
 }
 
+.agenturTunierTabele {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+
+  span {
+    line-height: 100%;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    margin: 10px;
+  }
+}
+
+.win {
+  color: #24ff24 !important;
+  font-weight: bold;
+}
+
 @media (max-width: 470px) {
   .green-line-social {
     width: 40px;
@@ -172,6 +204,13 @@ span {
     margin-top: 0px;
     margin: 5px;
     padding: 5px;
+  }
+
+  .event-shadow, .event-shadow1 {
+    img {
+      object-fit: cover;
+      width: 200px;
+    }
   }
 }
 
