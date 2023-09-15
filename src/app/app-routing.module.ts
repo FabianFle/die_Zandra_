@@ -13,7 +13,7 @@ const routes: Routes = [
   {path: '', component: StartComponent},
   {path: 'imprint', component: ImpressumComponent},
   {path: 'music', component: MusicComponent},
-  {path: 'socialMedia', component: SocialMediaComponent},
+  {path: 'socialmedia', component: SocialMediaComponent},
   {path: 'managerin', component: ManagerinComponent},
   {path: 'merchandise', component: MerchandiseComponent},
   {path: 'event', component: EventComponent},
