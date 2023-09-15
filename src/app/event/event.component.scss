@@ -69,11 +69,11 @@ span {
 .NoEventsDiv {
   position: relative;
   z-index: 2;
-  margin-top: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 80vh;
 
   h1 {
     font-size: 40px;
@@ -190,9 +190,23 @@ span {
   }
 }
 
-.win {
-  color: #24ff24 !important;
-  font-weight: bold;
+.eventCountdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  border: 2px solid #24ff24;
+  border-radius: 10px;
+  padding: 10px;
+
+  p {
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #24ff24;
+    text-shadow: 0 0 10px #24ff24, 0 0 20px #24ff24;
+  }
 }
 
 @media (max-width: 470px) {
@@ -206,7 +220,8 @@ span {
     padding: 5px;
   }
 
-  .event-shadow, .event-shadow1 {
+  .event-shadow,
+  .event-shadow1 {
     img {
       object-fit: cover;
       width: 200px;

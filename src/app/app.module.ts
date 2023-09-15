@@ -15,6 +15,7 @@ import { MusicComponent } from './music/music.component';
 import { ManagerinComponent } from './managerin/managerin.component';
 import { MerchandiseComponent } from './merchandise/merchandise.component';
 import { EventComponent } from './event/event.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { EventComponent } from './event/event.component';
     BrowserModule,
     AppRoutingModule,
     MatDialogModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
