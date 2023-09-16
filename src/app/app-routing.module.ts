@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ContactComponent } from './contact/contact.component';
 import { EventComponent } from './event/event.component';
 import { ImpressumComponent } from './impressum/impressum.component';
+import { KorporationComponent } from './korporation/korporation.component';
 import { ManagerinComponent } from './managerin/managerin.component';
 import { MerchandiseComponent } from './merchandise/merchandise.component';
 import { MusicComponent } from './music/music.component';
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path: 'managerin', component: ManagerinComponent},
   {path: 'merchandise', component: MerchandiseComponent},
   {path: 'event', component: EventComponent},
+  {path: 'korporation', component: KorporationComponent},
   {path: 'contact', component: ContactComponent},
 ];
 

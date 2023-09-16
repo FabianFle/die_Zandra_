@@ -2,6 +2,14 @@
   display: none !important;
 }
 
+h1 {
+  font-family: "Russo One", sans-serif;
+}
+
+span {
+  font-family: "Russo One", sans-serif;
+}
+
 .contact-div {
   position: relative;
   display: flex;
@@ -272,7 +280,7 @@ form {
   img {
     object-fit: cover;
     transition: all 125ms ease-in-out;
-    
+
     &:hover {
       transform: scale(1.05);
     }
@@ -326,7 +334,6 @@ form {
   }
 
   .img-contact {
-
     img {
       border-radius: 20px;
       border-right: 2px solid white;

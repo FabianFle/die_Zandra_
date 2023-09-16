@@ -16,6 +16,7 @@ import { ManagerinComponent } from './managerin/managerin.component';
 import { MerchandiseComponent } from './merchandise/merchandise.component';
 import { EventComponent } from './event/event.component';
 import { FormsModule } from '@angular/forms';
+import { KorporationComponent } from './korporation/korporation.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { FormsModule } from '@angular/forms';
     ManagerinComponent,
     MerchandiseComponent,
     EventComponent,
+    KorporationComponent,
   ],
   imports: [
     BrowserModule,
