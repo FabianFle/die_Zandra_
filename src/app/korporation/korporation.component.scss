@@ -7,10 +7,12 @@
 
 h1 {
   font-family: "Russo One", sans-serif;
+  color: white;
 }
 
 span {
   font-family: "Russo One", sans-serif;
+  color: white;
 }
 
 .green-line {
@@ -85,6 +87,25 @@ span {
   align-items: center;
   flex-wrap: wrap;
   height: 80vh;
+}
+
+.NoKorporationDiv {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+
+  h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
+.d-none {
+  display: none !important;
 }
 
 .korpo {
@@ -168,7 +189,8 @@ span {
     }
   }
 
-  .korporation-shadow, .korporation-shadow1 {
+  .korporation-shadow,
+  .korporation-shadow1 {
     object-fit: cover;
     width: 200px;
   }
