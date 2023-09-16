@@ -1,6 +1,6 @@
 <?php
 
-$recipient = 'fabianflegler@mail.de';
+$recipient = 'die_zandra@gmx.de';
 
 switch ($_SERVER['REQUEST_METHOD']) {
     case ("OPTIONS"): //Allow preflighting to take place.
