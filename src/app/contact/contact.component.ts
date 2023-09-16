@@ -12,6 +12,7 @@ export class ContactComponent {
   @ViewChild('messageField') messageField!: ElementRef;
   @ViewChild('sendButton') sendButton!: ElementRef;
 
+
   constructor() { }
 
   ngOnInit() { window.scrollTo(0, 0); }
@@ -29,7 +30,7 @@ export class ContactComponent {
     fd.append('nameField', nameField.value)
     fd.append('emailField', emailField.value)
     fd.append('messageField', messageField.value)
-    await fetch('https://www.die-zandra.de/send_mail.php',
+    await fetch('https://www.die-zandra.de/assets/send_mail.php',
     {
       method: 'POST',
       body: fd
@@ -42,6 +43,7 @@ export class ContactComponent {
     this.emailField.nativeElement.disabled = true;
     this.messageField.nativeElement.disabled = true;
     document.getElementById('loader')?.classList.remove('loaderDNone');
+    document.getElementById('sendMailBtn')?.classList.add('loaderDNone');
     this.inputValueNull();
   }
 
@@ -58,14 +60,15 @@ export class ContactComponent {
       // Bestätigung ausblenden
       setTimeout(() => {
         document.getElementById('sendEmail')?.classList.add('loaderDNone');
+        document.getElementById('sendMailBtn')?.classList.remove('loaderDNone');
 
         // Felder aktivieren
         setTimeout(() => {
           this.nameField.nativeElement.disabled = false;
           this.emailField.nativeElement.disabled = false;
           this.messageField.nativeElement.disabled = false;
-        }, 5000);
-      }, 5000);
+        }, 10);
+      }, 3000);
     }, 3000);
   }
 }
