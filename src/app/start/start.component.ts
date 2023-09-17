@@ -3,7 +3,7 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 @Component({
   selector: 'app-start',
   templateUrl: './start.component.html',
-  styleUrls: ['./start.component.scss']
+  styleUrls: ['./start.component.scss'],
 })
 export class StartComponent {
   @ViewChild('bgVideoDiv') bgVideoDiv: ElementRef;
@@ -23,6 +23,8 @@ export class StartComponent {
     }, 7000);
   }
 
-  ngOnInit() { window.scrollTo(0, 0); }
+  ngOnInit() {
+    window.scrollTo(0, 0);
+  }
 
 }
