@@ -48,6 +48,26 @@ header {
   }
 }
 
+.translateHeader {
+  position: fixed;
+  top: 20;
+  left: 20px;
+
+  img {
+    margin: 5px;
+    object-fit: cover;
+    height: 30px;
+    border-radius: 100%;
+    transition: all 125ms ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+      box-shadow: 0px 0px 10px 3px #24ff30;
+    }
+  }
+}
+
 .header-log-text {
   display: flex;
   justify-content: center;
@@ -209,7 +229,6 @@ header {
 }
 
 .wrapper ul li {
-  margin-left: 20px;
   margin-top: 50px;
   margin-bottom: 50px;
 }

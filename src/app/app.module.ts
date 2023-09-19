@@ -18,7 +18,6 @@ import { EventComponent } from './event/event.component';
 import { FormsModule } from '@angular/forms';
 import { KorporationComponent } from './korporation/korporation.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,6 +41,6 @@ import { KorporationComponent } from './korporation/korporation.component';
     FormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
