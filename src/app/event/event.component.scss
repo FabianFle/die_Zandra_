@@ -38,7 +38,6 @@ h1 {
 
 span {
   font-family: "Russo One", sans-serif;
-  color: white;
 }
 
 .headerEventDiv {
@@ -50,12 +49,22 @@ span {
   margin-top: 20px;
 }
 
+.allEventsDiv {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .underHeadlineEvent {
   position: relative;
   z-index: 2;
   margin-top: 20px;
 
   span {
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,15 +88,6 @@ span {
     font-size: 40px;
     text-align: center;
   }
-}
-
-.allEventsDiv {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
 .green-line-social {
@@ -242,5 +242,87 @@ span {
 
   .headerH1 {
     font-size: 35px;
+  }
+}
+
+//######################################################
+//######################################################
+
+.currentEvent {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 500px;
+  max-height: 800px;
+  border: 2px solid #24ff24;
+  border-radius: 10px;
+  transition: all 125ms ease-in-out;
+
+  &:hover {
+    box-shadow: 0px 0px 10px 3px #24ff30;
+  }
+
+  span {
+    font-family: "Russo One", sans-serif;
+    font-size: 25px;
+    text-align: center;
+  }
+}
+
+.spanDiv {
+  margin: 10px;
+
+  @media (max-width: 500px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.titel {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+.eingaben {
+  color: #24ff24;
+  font-size: 30px;
+}
+
+.registrierung {
+  font-size: 30px;
+  a {
+    text-decoration: none;
+    color: #24ff24;
+    transition: all 125ms ease-in-out;
+
+    &:hover {
+      text-shadow: 0 0 10px #24ff24, 0 0 20px #24ff24;
+    }
+  }
+}
+
+.eventImg {
+  object-fit: cover;
+  width: 450px;
+  border: 2px solid #24ff24;
+  border-radius: 10px;
+  transition: all 125ms ease-in-out;
+
+  &:hover {
+    box-shadow: 0px 0px 10px 3px #24ff30;
+  }
+
+  @media (max-width: 500px) {
+    width: 300px;
+  }
+
+  @media (max-width: 350px) {
+    width: 250px;
   }
 }
