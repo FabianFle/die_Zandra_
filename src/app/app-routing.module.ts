@@ -21,7 +21,7 @@ const routes: Routes = [
   {path: 'event', component: EventComponent},
   {path: 'korporation', component: KorporationComponent},
   {path: 'contact', component: ContactComponent},
-  {path: 'adminlog', component: AdminlogComponent},
+  // {path: 'adminlog', component: AdminlogComponent},
 ];
 
 @NgModule({

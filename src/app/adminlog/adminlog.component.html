@@ -16,6 +16,33 @@
 <div class="eventSettings" *ngIf="isLoggedIn">
 
 
+    <div class="addEvent">
 
-    <button class="button-green" (click)="logout()">Abmelden</button>
+        <h1>Event Erstellen</h1>
+
+        <div>
+            <span>Event Titel</span> <input type="text">
+            <span>Event Datum</span> <input type="date">
+            <span>Event Uhrzeit</span> <input type="time">
+            <span>Event Gegner</span> <input type="text">
+            <span>Event URL</span> <input type="url">
+            <span>Event Bild</span> <input type="file">
+        </div>
+
+        <button type="submit">Erstellen</button>
+
+    </div>
+
+
+    <div class="allEvent">
+
+    </div>
+
+
+
 </div>
+
+
+
+
+<button class="button-green" (click)="logout()">Abmelden</button>
