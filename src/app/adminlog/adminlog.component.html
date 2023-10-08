@@ -1,0 +1,21 @@
+<!-- Login-Bereich, der nur angezeigt wird, wenn der Benutzer nicht eingeloggt ist -->
+<div class="login-container" *ngIf="!isLoggedIn">
+    <h2>Admin Login</h2>
+    <div>
+        <label for="username">Benutzername:</label>
+        <input type="text" id="username" [(ngModel)]="username">
+    </div>
+    <div>
+        <label for="password">Passwort:</label>
+        <input type="password" id="password" [(ngModel)]="password">
+    </div>
+    <button (click)="login()">Anmelden</button>
+</div>
+
+
+<div class="eventSettings" *ngIf="isLoggedIn">
+
+
+
+    <button class="button-green" (click)="logout()">Abmelden</button>
+</div>

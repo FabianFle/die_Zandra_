@@ -17,6 +17,7 @@ import { MerchandiseComponent } from './merchandise/merchandise.component';
 import { EventComponent } from './event/event.component';
 import { FormsModule } from '@angular/forms';
 import { KorporationComponent } from './korporation/korporation.component';
+import { AdminlogComponent } from './adminlog/adminlog.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { KorporationComponent } from './korporation/korporation.component';
     MerchandiseComponent,
     EventComponent,
     KorporationComponent,
+    AdminlogComponent,
   ],
   imports: [
     BrowserModule,

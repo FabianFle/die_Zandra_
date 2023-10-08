@@ -9,6 +9,7 @@ import { MerchandiseComponent } from './merchandise/merchandise.component';
 import { MusicComponent } from './music/music.component';
 import { SocialMediaComponent } from './social-media/social-media.component';
 import { StartComponent } from './start/start.component';
+import { AdminlogComponent } from './adminlog/adminlog.component';
 
 const routes: Routes = [
   {path: '', component: StartComponent},
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path: 'event', component: EventComponent},
   {path: 'korporation', component: KorporationComponent},
   {path: 'contact', component: ContactComponent},
+  {path: 'adminlog', component: AdminlogComponent},
 ];
 
 @NgModule({

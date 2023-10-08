@@ -117,8 +117,6 @@
   img {
     border-radius: 10px;
     object-fit: contain;
-    width: 590px;
-    height: 500px;
     transition: all 125ms ease-in-out;
 
     &:hover {
@@ -199,6 +197,20 @@
 
   .tiktok-embed {
     width: auto !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .social-window {
+    img {
+      width: 200px;
+    }
+  }
+
+  .social-shadow1 {
+    img {
+      width: 250px;
+    }
   }
 }
 
